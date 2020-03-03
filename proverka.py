@@ -68,7 +68,7 @@ for dirpath, dirnames, files in os.walk('/var/www/html/files'):
         # Send mail
         smtp = SMTP_SSL()
         smtp.connect('smtp.gmail.com', 465)
-        smtp.login(address, 'jguibjsbvcpuoulm')
+        smtp.login(address, 'passwdfromgmailapp')
         smtp.sendmail(address, TOaddress, msg.as_string())
         smtp.quit()
         # sendingEmail_____________________________________________OFF
